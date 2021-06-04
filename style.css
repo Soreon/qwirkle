@@ -1,0 +1,82 @@
+.tile {
+    display: inline-flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(241, 241, 241);
+}
+
+.yellow {
+    color: #FECC2F;
+}
+
+.orange {
+    color: #F9A228;
+}
+
+.red {
+    color: #DB3838;
+}
+
+.purple {
+    color: #A363D9;
+}
+
+.blue {
+    color: #40A4D8;
+}
+
+.green {
+    color: #B2C225;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+#board-container {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    grid-gap: 1px;
+}
+
+.placeholder {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 0 1px #c8ecff;
+}
+
+.placeholder:hover {
+    background-color: #c8ecff;
+}
+
+#players {
+    flex: 1;
+    max-height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player {
+    flex: 1;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
